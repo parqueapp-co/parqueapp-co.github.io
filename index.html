@@ -15,26 +15,32 @@
     <link rel="stylesheet" href="./css/spectre-icons.css">
     <link rel="stylesheet" href="./css/spectre-exp.css">
     <link rel="stylesheet" href="./css/yeo.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <meta property="og:title" content="ParqueApp - Software para Gestión de Parqueaderos">
     <meta property="og:url" content="">
     <meta property="og:description" content="Automatiza tu parqueadero con nuestra plataforma SaaS. Control vehicular, facturación y reportes desde cualquier dispositivo.">
     <meta property="og:site_name" content="ParqueApp">
     <meta property="og:type" content="product">
     <meta property="og:image" content="">
+
 </head>
 
 <body>
     <div class="yeo-slogan">
-        <div class="container yeo-header">
-            <div class="columns">
-                <div class="column col-12">
                     <header class="navbar">
                         <section class="navbar-section">
                             <a class="navbar-brand logo" href="./">
                                 <img class="logo-img" src="./images/logo.svg" alt="ParqueApp"><span>ParqueApp</span>
                             </a>
                         </section>
-                        <section class="navbar-section hide-sm">
+                        
+                        <button class="burger-btn" id="burgerBtn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                        <section class="navbar-section navbar-menu" id="navbarMenu">
                             <a class="btn btn-link" href="#funcionalidades">Funcionalidades</a>
                             <a class="btn btn-link" href="#como-funciona">Cómo Funciona</a>
                             <a class="btn btn-link" href="#precio">Precio</a>
@@ -42,9 +48,6 @@
                             <a class="btn btn-primary btn-hire-me" href="https://parqueapp.app" target="_blank">Login</a>
                         </section>
                     </header>
-                </div>
-            </div>
-        </div>
         <div class="container slogan">
             <div class="columns">
                 <div class="column col-7 col-sm-12">
@@ -55,7 +58,7 @@
                             <span class="slogan-bold">Desde Cualquier Dispositivo</span>
                         </h1>
                         <p>Plataforma SaaS que revoluciona la gestión de parqueaderos con control automático de vehículos, facturación instantánea y reportes en tiempo real. Sin instalaciones complejas, sin experiencia técnica requerida.</p>
-                        <a class="btn btn-primary btn-lg btn-start" target="_blank" href="https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20conocer%20más%20sobre%20ParqueApp%20para%20digitalizar%20mi%20parqueadero.%20¿Podrían%20agendar%20una%20demostración%20gratuita?">Solicitar Demostración Gratuita</a>
+                        <a class="btn btn-primary btn-lg btn-start" target="_blank" href="https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20conocer%20más%20sobre%20ParqueApp%20para%20digitalizar%20mi%20parqueadero.%20¿Podrían%20agendar%20una%20demostración%20gratuita?">Solicitar Demo</a>
                     </div>
                 </div>
                 <div class="column col-5 hide-sm">
@@ -327,6 +330,55 @@
             </div>
         </div>
     </div>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerBtn = document.getElementById('burgerBtn');
+            const navbarMenu = document.getElementById('navbarMenu');
+            
+            burgerBtn.addEventListener('click', function() {
+                burgerBtn.classList.toggle('active');
+                navbarMenu.classList.toggle('open');
+                
+                // Prevenir scroll del body cuando el menú está abierto
+                if (navbarMenu.classList.contains('open')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Cerrar menú al hacer click en un enlace (móvil)
+            const menuLinks = navbarMenu.querySelectorAll('a:not(.btn-primary)');
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 768) {
+                        burgerBtn.classList.remove('active');
+                        navbarMenu.classList.remove('open');
+                        document.body.style.overflow = 'auto';
+                    }
+                });
+            });
+            
+            // Cerrar menú al redimensionar ventana
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    burgerBtn.classList.remove('active');
+                    navbarMenu.classList.remove('open');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+            
+            // Cerrar menú al hacer click fuera de él
+            document.addEventListener('click', function(e) {
+                if (!e.target.closest('.navbar') && navbarMenu.classList.contains('open')) {
+                    burgerBtn.classList.remove('active');
+                    navbarMenu.classList.remove('open');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
