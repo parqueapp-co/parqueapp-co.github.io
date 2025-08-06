@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.parqueapp.com/</loc>
+    <lastmod>2025-08-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Sección: Funcionalidades -->
+  <url>
+    <loc>https://www.parqueapp.com/#funcionalidades</loc>
+    <lastmod>2025-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Sección: Cómo Funciona -->
+  <url>
+    <loc>https://www.parqueapp.com/#como-funciona</loc>
+    <lastmod>2025-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sección: Precios -->
+  <url>
+    <loc>https://www.parqueapp.com/#precio</loc>
+    <lastmod>2025-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Sección: Nosotros -->
+  <url>
+    <loc>https://www.parqueapp.com/#nosotros</loc>
+    <lastmod>2025-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- WhatsApp CTA -->
+  <url>
+    <loc>https://api.whatsapp.com/send?phone=573122656289&amp;text=¡Hola!%20Quiero%20conocer%20ParqueApp%20para%20automatizar%20mi%20parqueadero.</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>

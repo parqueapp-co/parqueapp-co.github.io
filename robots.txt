@@ -1,0 +1,10 @@
+# robots.txt para https://www.parqueapp.com
+
+User-agent: *
+Disallow:
+
+# Permitir todos los rastreadores en todo el sitio
+Allow: /
+
+# Ubicación del sitemap
+Sitemap: https://www.parqueapp.com/sitemap.xml
