@@ -81,517 +81,359 @@
     <link rel="canonical" href="https://www.parqueapp.com">
     
     <!-- Favicon y Apple Touch Icon -->
-    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/parqueapp.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/parqueapp.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="./css/spectre.css">
-    <link rel="stylesheet" href="./css/spectre-icons.css">
-    <link rel="stylesheet" href="./css/spectre-exp.css">
-    <link rel="stylesheet" href="./css/yeo.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./css/normalize.css"> 
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="yeo-slogan">
-                    <header class="navbar">
-                        <section class="navbar-section">
-                            <a class="navbar-brand logo" href="./">
-                                <img class="logo-img" src="./images/logo.svg" alt="ParqueApp - Programa de Parqueadero y Software para Estacionamiento Colombia"><span>ParqueApp</span>
-                            </a>
-                        </section>
-                        
-                        <button class="burger-btn" id="burgerBtn" aria-label="Menú de navegación programa parqueadero">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </button>
-                        
-                        <nav class="navbar-section navbar-menu" id="navbarMenu" role="navigation" aria-label="Navegación principal software parqueadero">
-                            <a class="btn btn-link" href="#funcionalidades">Funcionalidades</a>
-                            <a class="btn btn-link" href="#como-funciona">Cómo Funciona</a>
-                            <a class="btn btn-link" href="#precio">Precios</a>
-                            <a class="btn btn-link" href="#nosotros">Nosotros</a>
-                            <a class="btn btn-primary btn-hire-me" href="https://parqueapp.app" target="_blank" rel="noopener">Acceder</a>
-                        </nav>
-                    </header>
-        <div class="container slogan">
-            <div class="columns">
-                <div class="column col-7 col-sm-12">
-                    <div class="slogan-content">
-                        <h1>
-                            <span class="slogan-bold">ParqueApp <br> Software para Parqueaderos - Gestión Completa</span> 
-                        </h1>
-                        <p>ParqueApp es el programa de parqueadero más completo de Colombia. Nuestro software de estacionamiento inteligente incluye sistema de control vehicular, gestión de parqueos, reserva de parqueadero y administración completa. Aplicación para parquear sin instalaciones complejas, configuración rápida en 24 horas. Ideal para programa de parqueadero en Popayán, Bogotá, Medellín, Cali y toda Colombia. Software para estacionamiento público y privado, control de entrada y salida, facturación automática y ubicación de parqueadero en tiempo real.</p>
-                        <a class="btn btn-primary btn-lg btn-start" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20conocer%20ParqueApp,%20el%20programa%20de%20parqueadero%20para%20automatizar%20mi%20estacionamiento.%20¿Pueden%20agendar%20una%20demostración%20gratuita?" aria-label="Solicitar demostración gratuita programa parqueadero por WhatsApp">Solicitar Demo Gratis</a>
-                    </div>
+    <header class="header">
+        <nav class="appbar-container" aria-label="Navegación principal">
+
+            <button 
+                class="menu-toggle"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <img 
+                src="./images/ParqueApp styling.png"
+                alt="ParqueApp software de parqueaderos en Colombia"
+                class="appbar-logo"
+            />
+
+            <ul class="appbar-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#solucion">Solución</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#nosotros">Sobre nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <a class="btn btn-primary btn-hire-me" href="https://parqueapp.app" target="_blank" rel="noopener">Acceder</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="inicio">
+        <section class="section">
+            <article class="welcome-article">
+                <div class="welcome-info">
+                    <h1>ParqueApp Software para Parqueaderos - Gestión Completa</h1>
+
+                    <p>
+                        ParqueApp es un software de parqueadero inteligente para la gestión de
+                        estacionamientos públicos y privados. Integra control vehicular,
+                        reservas de parqueadero, facturación automática y disponibilidad en
+                        tiempo real, con implementación rápida y sin instalaciones complejas
+                        en todo Colombia.
+                    </p>
+
+                    <a 
+                        href="https://api.whatsapp.com/send?phone=573122656289&text=Hola,%20me%20interesa%20el%20Control%20Vehicular%20y%20Gestión%20de%20Parqueos%20de%20ParqueApp.%20¿Podrían%20mostrarme%20una%20demo?" 
+                        rel="noopener" 
+                        target="_blank"
+                        class="welcome-demo-btn"
+                        role="button"
+                        aria-label="Solicitar demostración gratuita de ParqueApp"
+                    >
+                        Solicitar demo gratis
+                    </a>
                 </div>
-                <div class="column col-5 hide-sm">
-                    <img class="slogan-img" src="./images/yeo-feature-1.svg" alt="Dashboard ParqueApp programa de parqueadero mostrando control vehicular, gestión de estacionamiento y reportes en tiempo real">
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <section class="yeo-client">
-        <div class="container yeo-client-list">
-            <div class="columns">
-                <div class="column col-12">
-                    <h2 class="feature-title">
-                        Parqueaderos que Usan Nuestro Software de Estacionamiento
+
+                <img 
+                    src="./images/parqueapp.png" 
+                    alt="Plataforma ParqueApp para gestión de estacionamientos" 
+                    class="welcome-banner"
+                />
+            </article>
+        </section>
+    </main>
+
+    <main class="main-solucion" id="solucion">
+        <section class="section solution-section">
+            <article class="solution-article">
+
+                <header class="solution-header">
+                    <h2 class="solution-title">
+                        Funcionalidades del Software de Parqueaderos ParqueApp
                     </h2>
-                    <div class="client-logo" style="text-align: center; padding: 2rem 0;">
-                        <div style="display: inline-block; background: #f8f9fa; padding: 1.5rem 2rem; border-radius: 8px; margin: 0 1rem;">
-                            <h3 style="margin: 0; color: #495057; font-weight: 600;">Parqueadero Anarkos</h3>
-                            <p style="margin: 0.5rem 0 0 0; color: #6c757d; font-size: 0.95rem;">Popayán, Cauca - Usa ParqueApp desde 2024</p>
-                        </div>
-                        <div style="display: inline-block; background: #e3f2fd; padding: 1.5rem 2rem; border-radius: 8px; margin: 0 1rem;">
-                            <h3 style="margin: 0; color: #1976d2; font-weight: 600;">¿Tu Parqueadero?</h3>
-                            <p style="margin: 0.5rem 0 0 0; color: #1565c0; font-size: 0.95rem;">Próximo en digitalizar su gestión de estacionamiento</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                    <p class="solution-subtitle">
+                        Sistema completo de gestión vehicular y control de estacionamientos
+                        para parqueaderos públicos y privados en Colombia.
+                    </p>
+                </header>
 
-    <section class="yeo-do" id="funcionalidades">
-        <div class="container yeo-body">
-            <div class="columns">
-                <div class="column col-12">
-                    <h2 class="feature-title">Funcionalidades del Programa de Parqueadero ParqueApp</h2>
-                    <p style="text-align: center; font-size: 1.1rem; color: #6c757d; margin-bottom: 3rem;">Sistema completo de gestión vehicular y control de estacionamiento con todas las herramientas para administrar tu parqueadero, zona de parqueo o espacio para parquear</p>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div class="yeo-do-content">
-                        <img src="./images/what-we-do-1.svg" alt="Control Vehicular Automático - Software ParqueApp para gestión de estacionamiento">
-                        <h3>Control Vehicular y Gestión de Parqueos</h3>
-                        <p>Sistema automatizado para registro de entrada y salida de vehículos en tu parqueadero. Cálculo automático de tarifas por hora, fracción o mensualidad. Control de placas, horarios y tipos de vehículo. Perfecto para administración de parqueadero público y privado en Colombia.</p>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Hola,%20me%20interesa%20el%20Control%20Vehicular%20y%20Gestión%20de%20Parqueos%20de%20ParqueApp.%20¿Podrían%20mostrarme%20una%20demo?" rel="noopener" target="_blank">Ver Demo Control Vehicular</a>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div class="yeo-do-content">
-                        <img src="./images/what-we-do-2.svg" alt="Sistema de Facturación para Parqueaderos">
-                        <h3>Facturación y Cobro de Estacionamiento</h3>
-                        <p>Genera recibos automáticos para tu parqueadero. Formatos personalizables con logo y datos de tu empresa. Sistema de cobro integrado, envío automático por WhatsApp o email. Perfecto para facturación de parqueos y control de tarifas de estacionamiento.</p>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Necesito%20información%20sobre%20Facturación%20y%20Cobro%20de%20Estacionamiento%20en%20ParqueApp.%20¿Cómo%20funciona?" rel="noopener" target="_blank">Ver Sistema de Facturación</a>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div class="yeo-do-content">
-                        <img src="./images/what-we-do-3.svg" alt="Reportes y Analytics para Administración de Parqueaderos">
-                        <h3>Reportes y Analytics de Estacionamiento</h3>
-                        <p>Dashboard completo con métricas en tiempo real: ingresos diarios del parqueadero, ocupación promedio, vehículos por hora. Reportes detallados por fechas, tipos de vehículo y empleados. Sistema de auditoría completo para control administrativo de tu zona de parqueo.</p>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Quiero%20ver%20los%20Reportes%20y%20Analytics%20de%20Estacionamiento%20de%20ParqueApp.%20¿Qué%20métricas%20puedo%20obtener?" rel="noopener" target="_blank">Ver Analytics Parqueadero</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+                <div class="solution-features">
 
-    <section class="yeo-work" id="como-funciona">
-        <div class="container yeo-body">
-            <div class="columns">
-                <div class="column col-12 col-sm-12">
-                    <h2 class="feature-title">Cómo Funciona el Software de Estacionamiento ParqueApp</h2>
-                    <p style="text-align: center; font-size: 1.1rem; color: #6c757d; margin-bottom: 2rem;">Implementación rápida y configuración fácil para parqueaderos, zonas de parqueo y espacios de estacionamiento de cualquier tamaño</p>
+                    <div class="solution-feature">
+                        <img 
+                            src="images/what-we-do.svg"
+                            alt="Gestión de vehículos y parqueaderos"
+                            class="solution-icon"
+                        >
+                        <h3>Gestión de vehículos y parqueos</h3>
+                        <p>
+                            Registro automatizado de entradas y salidas, control de placas,
+                            cálculo de tarifas por hora, fracción o mensualidad y
+                            administración eficiente de parqueaderos públicos y privados.
+                        </p>
+                    </div>
+
+                    <div class="solution-feature">
+                        <img 
+                            src="images/what-we-do-2.svg"
+                            alt="Facturación y cobro de estacionamiento"
+                            class="solution-icon"
+                        >
+                        <h3>Facturación y cobro de estacionamiento</h3>
+                        <p>
+                            Facturación automática con recibos personalizables, control de
+                            tarifas, registro de pagos y envío de comprobantes por WhatsApp
+                            o correo electrónico.
+                        </p>
+                    </div>
+
+                    <div class="solution-feature">
+                        <img 
+                            src="images/what-we-do-3.svg"
+                            alt="Reportes financieros de parqueaderos"
+                            class="solution-icon"
+                        >
+                        <h3>Reportes y análisis financiero</h3>
+                        <p>
+                            Panel con métricas en tiempo real: ingresos, ocupación,
+                            trazabilidad por vehículo y reportes detallados para
+                            auditoría y control administrativo.
+                        </p>
+                    </div>
                 </div>
-                <div class="column col-10 col-sm-12 centered">
-                    <h3 class="yeo-work-feature">
-                        Programa de parqueadero <span class="yeo-work-feature-bold">100% personalizable</span> adaptado a parqueaderos colombianos con todas las funcionalidades para gestión de estacionamiento.
+                <a 
+                    href="https://api.whatsapp.com/send?phone=573122656289&text=Hola,%20me%20interesa%20el%20Control%20Vehicular%20y%20Gestión%20de%20Parqueos%20de%20ParqueApp.%20¿Podrían%20darme%20más%20información?" 
+                    rel="noopener" 
+                    target="_blank"
+                    class="info-btn"
+                    role="button"
+                    aria-label="Solicitar demostración gratuita de ParqueApp"
+                >
+                    QUIERO SABER MÁS
+                </a>
+
+                <div>
+                    <h3 class="solution-extra-title">
+                        🚀 Próximamente en ParqueApp
                     </h3>
-                    <div style="margin-top: 3rem; text-align: left; max-width: 600px;">
-                        <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                            <h4 style="color: #495057; margin-bottom: 0.5rem;">💰 Tarifas de Parqueadero Configurables</h4>
-                            <p style="margin: 0; color: #6c757d;">Define tarifas por minuto, hora, día o mensualidad para tu estacionamiento. Configuración de descuentos especiales, promociones y tarifas diferenciadas para motos, carros y vehículos especiales en tu zona de parqueo.</p>
-                        </div>
-                        <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                            <h4 style="color: #495057; margin-bottom: 0.5rem;">📱 App para Parquear Multiplataforma</h4>
-                            <p style="margin: 0; color: #6c757d;">Funciona desde computadores, tablets y celulares con conexión a internet. Sin instalaciones complejas, sin hardware costoso. Aplicación para parquear ideal para estacionamientos en Colombia.</p>
-                        </div>
-                        <div style="margin-bottom: 2rem; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
-                            <h4 style="color: #495057; margin-bottom: 0.5rem;">📊 Control Total del Estacionamiento</h4>
-                            <p style="margin: 0; color: #6c757d;">Registro completo de cada transacción en el parqueadero con usuario responsable, fecha, hora y evidencia fotográfica. Perfecto para auditorías y administración de parqueadero profesional.</p>
-                        </div>
-                    </div>
+                    <p class="solution-extra-subtitle">
+                        Estas funcionalidades estarán disponibles próximamente para todos nuestros usuarios
+                    </p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="yeo-price" id="precio">
-        <div class="container yeo-body col-sm-12">
-            <div class="columns">
-                <div class="column col-12" style="text-align: center; margin-bottom: 3rem;">
-                    <h2 class="feature-title">Precios del Programa de Parqueadero ParqueApp</h2>
-                    <p style="font-size: 1.1rem; color: #6c757d; max-width: 700px; margin: 1rem auto;">Planes flexibles para gestión de estacionamiento. Sin costos ocultos, sin permanencia mínima. Ideal para parqueaderos pequeños, medianos y grandes en Colombia.</p>
-                </div>
-                
-                <!-- Plan Mensual -->
-                <div class="column col-6 col-sm-12">
-                    <div class="panel" style="border: 2px solid #007bff; box-shadow: 0 4px 15px rgba(0,123,255,0.1);">
-                        <div class="panel-header" style="background: #007bff; color: white;">
-                            <div class="panel-title"><span style="font-size: 1.2rem; font-weight: 600;">PLAN MENSUAL</span></div>
-                        </div>
-                        <div class="panel-body" style="padding: 1.5rem;">
-                            <p>
-                                <span class="price" style="font-size: 2.5rem; color: #007bff;">$60.000</span>
-                                <span style="font-size: 1rem; color: #6c757d;">COP / mes</span>
-                            </p>
-                            <div style="background: #e8f4fd; padding: 0.8rem; border-radius: 6px; margin: 1rem 0;">
-                                <p style="margin: 0; color: #0056b3; font-weight: 500;">🎯 Perfecto para comenzar</p>
-                            </div>
-                            <ul style="text-align: left; margin: 1rem 0; font-size: 0.9rem;">
-                                <li style="margin-bottom: 0.4rem;">✅ Software en la nube</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Registro de ingresos y salidas</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Facturación automática</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Reportes por fechas</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Control de usuarios y roles</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Configuración de convenios</li>
-                                <li style="margin-bottom: 0.4rem;">✅ 1 mes soporte técnico gratuito</li>
-                            </ul>
-                        </div>
-                        <div class="panel-footer" style="padding: 1rem;">
-                            <button class="btn btn-primary" style="width: 100%; padding: 0.8rem;" onclick="window.open('https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20contratar%20el%20Plan%20Mensual%20de%20ParqueApp%20por%20$60.000/mes.', '_blank')">Comenzar Plan Mensual</button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Plan Anual -->
-                <div class="column col-6 col-sm-12">
-                    <div class="panel" style="border: 3px solid #28a745; box-shadow: 0 8px 25px rgba(40,167,69,0.15); position: relative;">
-                        <div style="position: absolute; top: -15px; right: 15px; background: #ffc107; color: #000; padding: 0.3rem 1rem; border-radius: 15px; font-weight: 600; font-size: 0.8rem;">MÁS POPULAR</div>
-                        <div class="panel-header" style="background: linear-gradient(135deg, #28a745, #1e7e34); color: white;">
-                            <div class="panel-title"><span style="font-size: 1.2rem; font-weight: 600;">PLAN ANUAL</span></div>
-                        </div>
-                        <div class="panel-body" style="padding: 1.5rem;">
-                            <p>
-                                <span class="price" style="font-size: 2.5rem; color: #28a745;">$600.000</span>
-                                <span style="font-size: 1rem; color: #6c757d;">COP / año</span>
-                            </p>
-                            <div style="background: #d4edda; padding: 0.8rem; border-radius: 6px; margin: 1rem 0; border-left: 4px solid #28a745;">
-                                <p style="margin: 0; color: #155724; font-weight: 500;">💰 Ahorro del 20% vs pago mensual</p>
-                            </div>
-                            <ul style="text-align: left; margin: 1rem 0; font-size: 0.9rem;">
-                                <li style="margin-bottom: 0.4rem;">✅ Todo lo del plan mensual</li>
-                                <li style="margin-bottom: 0.4rem;">✅ <strong>Capacitación virtual inicial (1h)</strong></li>
-                                <li style="margin-bottom: 0.4rem;">✅ <strong>Respaldo de datos garantizado</strong></li>
-                                <li style="margin-bottom: 0.4rem;">✅ Software en la nube</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Facturación y reportes completos</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Control total de usuarios</li>
-                                <li style="margin-bottom: 0.4rem;">✅ Soporte técnico incluido</li>
-                            </ul>
-                        </div>
-                        <div class="panel-footer" style="padding: 1rem;">
-                            <button class="btn btn-success" style="width: 100%; padding: 0.8rem; background: #28a745;" onclick="window.open('https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20contratar%20el%20Plan%20Anual%20de%20ParqueApp%20por%20$600.000/año%20con%20el%2020%25%20de%20descuento.', '_blank')">🚀 Comenzar Plan Anual</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Paquete de Implementación -->
-            <div class="columns" style="margin-top: 3rem;">
-                <div class="column col-12" style="text-align: center; margin-bottom: 2rem;">
-                    <h3 class="feature-title" style="font-size: 1.8rem;">Paquete de Implementación (Opcional)</h3>
-                    <p style="color: #6c757d;">Para parqueaderos que necesitan equipos básicos</p>
-                </div>
-                <div class="column col-8 col-sm-12 centered">
-                    <div class="panel" style="border: 2px solid #ffc107; background: #fffbf0;">
-                        <div class="panel-header" style="background: #ffc107; color: #000;">
-                            <div class="panel-title"><span style="font-size: 1.2rem; font-weight: 600;">PAQUETE DE IMPLEMENTACIÓN</span></div>
-                        </div>
-                        <div class="panel-body" style="padding: 2rem;">
-                            <p>
-                                <span class="price" style="font-size: 2.8rem; color: #ffc107;">$1.200.000</span>
-                                <span style="font-size: 1.1rem; color: #6c757d;">COP (pago único)</span>
-                            </p>
-                            <div style="background: #fff3cd; padding: 1rem; border-radius: 6px; margin: 1.5rem 0; border-left: 4px solid #ffc107;">
-                                <p style="margin: 0; color: #856404; font-size: 0.9rem;"><strong>⚠️ Nota importante:</strong> Este paquete NO incluye el costo de la suscripción al software, la cual se contrata por mensualidad o anualidad.</p>
-                            </div>
-                            <ul style="text-align: left; margin: 1.5rem 0;">
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>Computador de escritorio</strong> (reacondicionado, garantía 6 meses)</li>
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>Impresora térmica de tickets</strong></li>
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>Instalación y configuración</strong> del software</li>
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>Personalización de ticket</strong> (logo, datos del parqueadero)</li>
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>Capacitación presencial</strong> (1 hora)</li>
-                                <li style="margin-bottom: 0.5rem;">✅ <strong>1 mes de soporte técnico</strong> incluido</li>
-                            </ul>
-                        </div>
-                        <div class="panel-footer" style="padding: 1.5rem;">
-                            <button class="btn btn-warning" style="width: 100%; padding: 1rem; font-size: 1.1rem; color: #000;" onclick="window.open('https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Me%20interesa%20el%20Paquete%20de%20Implementación%20de%20ParqueApp%20por%20$1.200.000.%20¿Qué%20incluye%20exactamente?', '_blank')">💼 Cotizar Implementación</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Servicios Adicionales -->
-            <div class="columns" style="margin-top: 3rem;">
-                <div class="column col-12" style="text-align: center; margin-bottom: 2rem;">
-                    <h3 class="feature-title" style="font-size: 1.8rem;">Servicios Adicionales</h3>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; height: 100%; border-left: 4px solid #007bff;">
-                        <h4 style="color: #495057; margin-bottom: 1rem;">🛠️ Soporte Avanzado</h4>
-                        <p style="font-size: 1.5rem; color: #007bff; font-weight: 600; margin: 0.5rem 0;">$40.000 COP/hora</p>
-                        <ul style="font-size: 0.9rem; color: #6c757d; margin: 1rem 0;">
-                            <li>Asistencia remota inmediata</li>
-                            <li>Capacitación extra al personal</li>
-                            <li>Configuración avanzada</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Necesito%20soporte%20avanzado%20para%20ParqueApp." target="_blank" rel="noopener" style="color: #007bff; text-decoration: none; font-size: 0.9rem;">Solicitar Soporte →</a>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; height: 100%; border-left: 4px solid #28a745;">
-                        <h4 style="color: #495057; margin-bottom: 1rem;">🔧 Mantenimiento Preventivo</h4>
-                        <p style="font-size: 1.5rem; color: #28a745; font-weight: 600; margin: 0.5rem 0;">$200.000 COP/año</p>
-                        <ul style="font-size: 0.9rem; color: #6c757d; margin: 1rem 0;">
-                            <li>Revisión de configuración</li>
-                            <li>Copias de seguridad adicionales</li>
-                            <li>Optimización de base de datos</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Me%20interesa%20el%20mantenimiento%20preventivo%20anual%20de%20ParqueApp." target="_blank" rel="noopener" style="color: #28a745; text-decoration: none; font-size: 0.9rem;">Contratar Mantenimiento →</a>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; height: 100%; border-left: 4px solid #ffc107;">
-                        <h4 style="color: #495057; margin-bottom: 1rem;">⚙️ Desarrollo Personalizado</h4>
-                        <p style="font-size: 1.5rem; color: #ffc107; font-weight: 600; margin: 0.5rem 0;">$40.000 COP/hora</p>
-                        <ul style="font-size: 0.9rem; color: #6c757d; margin: 1rem 0;">
-                            <li>Funciones personalizadas</li>
-                            <li>Migración de datos: $150.000</li>
-                            <li>Integración con hardware externo</li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=Necesito%20desarrollo%20personalizado%20para%20mi%20parqueadero%20con%20ParqueApp." target="_blank" rel="noopener" style="color: #ffc107; text-decoration: none; font-size: 0.9rem;">Cotizar Desarrollo →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Funcionalidades en Desarrollo -->
-            <div class="columns" style="margin-top: 3rem;">
-                <div class="column col-12" style="text-align: center;">
-                    <div style="background: linear-gradient(135deg, #6f42c1, #5a32a3); padding: 3rem; border-radius: 12px; color: white;">
-                        <h3 style="color: white; margin-bottom: 1.5rem;">🚀 Próximamente en ParqueApp</h3>
-                        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
-                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; min-width: 200px;">
-                                <h4 style="color: white; margin-bottom: 0.5rem;">🏢 Multi-sede</h4>
-                                <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.9rem;">Administra múltiples parqueaderos desde una sola cuenta</p>
-                            </div>
-                            <div style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; min-width: 200px;">
-                                <h4 style="color: white; margin-bottom: 0.5rem;">📱 App Móvil</h4>
-                                <p style="color: rgba(255,255,255,0.8); margin: 0; font-size: 0.9rem;">Control remoto desde tu teléfono</p>
-                            </div>
-                        </div>
-                        <p style="margin-top: 2rem; opacity: 0.8;">Estas funcionalidades estarán disponibles próximamente para todos nuestros usuarios</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="yeo-team" id="nosotros">
-        <div class="container yeo-body">
-            <div class="columns">
-                <div class="column col-12">
-                    <h2 class="feature-title">¿Por Qué Elegir ParqueApp como Software de Estacionamiento?</h2>
-                    <p style="text-align: center; font-size: 1.1rem; color: #6c757d; margin-bottom: 3rem;">Somos especialistas en programas de parqueadero y software de estacionamiento colombiano</p>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="text-align: center;">
-                        <div style="width: 80px; height: 80px; background: #007bff; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: white; font-size: 2rem;">🇨🇴</span>
-                        </div>
-                        <h3>Especialización en Parqueaderos Colombianos</h3>
-                        <p>Programa de parqueadero diseñado específicamente para estacionamientos en Colombia. Manejamos peso colombiano (COP), entendemos las necesidades del mercado local desde Popayán hasta las principales ciudades. Software de estacionamiento adaptado a la realidad colombiana.</p>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="text-align: center;">
-                        <div style="width: 80px; height: 80px; background: #28a745; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: white; font-size: 2rem;">📈</span>
-                        </div>
-                        <h3>Escalabilidad para Todo Tipo de Estacionamiento</h3>
-                        <p>Desde parqueaderos pequeños hasta grandes cadenas de estacionamiento. Acompañamos el crecimiento de tu negocio con nuevas funcionalidades, integración con otros sistemas y soporte para múltiples sedes y zonas de parqueo.</p>
-                    </div>
-                </div>
-                <div class="column col-4 col-sm-12">
-                    <div style="text-align: center;">
-                        <div style="width: 80px; height: 80px; background: #ffc107; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
-                            <span style="color: white; font-size: 2rem;">🛠️</span>
-                        </div>
-                        <h3>Soporte Especializado en Software Parqueadero</h3>
-                        <p>Equipo técnico colombiano especializado en programas de parqueadero que habla tu idioma y entiende tu operación. Capacitación completa en el uso del software, soporte por WhatsApp, y actualizaciones constantes sin costo adicional.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="yeo-open-source">
-        <div class="container yeo-body">
-            <div class="columns">
-                <div class="column col-12">
-                    <h2 class="feature-title">Automatiza tu Parqueadero con el Mejor Software de Estacionamiento</h2>
-                </div>
-                <div class="column col-10 centered col-sm-12">
-                    <div style="background: #f8f9fa; padding: 3rem; border-radius: 12px; text-align: center;">
-                        <h3 class="open-source-feature" style="color: #495057; margin-bottom: 2rem;">
-                            Únete a la transformación digital
-                            <br />
-                            de parqueaderos y estacionamientos en Colombia
-                        </h3>
-                        <p style="font-size: 1.1rem; color: #6c757d; margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
-                            Solicita una demostración personalizada gratuita de nuestro programa de parqueadero y descubre cómo ParqueApp puede transformar la gestión de tu estacionamiento en menos de 24 horas. Implementación de software rápida garantizada.
+                <div class="solution-features">
+                    <div class="solution-feature">
+                        <h3>ParqueApp Reservas</h3>
+                        <p>
+                            Gestiona reservas para empresas privadas con gestión de reservas
                         </p>
-                        <a href="https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Quiero%20automatizar%20mi%20parqueadero%20con%20ParqueApp,%20el%20mejor%20software%20de%20estacionamiento.%20¿Pueden%20agendar%20una%20demostración%20gratuita%20personalizada?" class="btn btn-lg btn-open-source" target="_blank" rel="noopener" style="margin-right: 1rem;" aria-label="Solicitar demostración gratuita personalizada programa parqueadero">💬 Demo Gratuita Programa Parqueadero</a>
-                        <p style="margin-top: 1rem; font-size: 0.9rem; color: #868e96;">
-                            <strong>✅ Demo sin compromiso</strong> • <strong>⚡ Implementación 24h</strong> • <strong>🇨🇴 Soporte especializado en Colombia</strong>
+                    </div>
+
+                    <div class="solution-feature">
+                        <h3>📱 App Móvil</h3>
+                        <p>
+                            Control remoto desde tu teléfono
                         </p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </article>
+        </section>
+    </main>
 
-    <!-- Compartir en redes sociales -->
-    <div class="social-share" style="position: fixed; right: 20px; top: 50%; transform: translateY(-50%); z-index: 1000; display: flex; flex-direction: column; gap: 10px;">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.parqueapp.com" target="_blank" rel="noopener" style="background: #1877f2; color: white; padding: 10px; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" title="Compartir ParqueApp - Programa de Parqueadero en Facebook">
-            📘
-        </a>
-        <a href="https://twitter.com/intent/tweet?text=ParqueApp%20-%20Programa%20de%20Parqueadero%20y%20Software%20de%20Estacionamiento%20Colombia&url=https://www.parqueapp.com" target="_blank" rel="noopener" style="background: #1da1f2; color: white; padding: 10px; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" title="Compartir Software de Parqueadero en Twitter">
-            🐦
-        </a>
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.parqueapp.com" target="_blank" rel="noopener" style="background: #0077b5; color: white; padding: 10px; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" title="Compartir Programa de Parqueadero en LinkedIn">
-            💼
-        </a>
-        <a href="https://api.whatsapp.com/send?text=Mira%20este%20programa%20de%20parqueadero%20y%20software%20de%20estacionamiento%20https://www.parqueapp.com" target="_blank" rel="noopener" style="background: #25d366; color: white; padding: 10px; border-radius: 50%; text-decoration: none; display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" title="Compartir Software Parqueadero por WhatsApp">
-            📱
-        </a>
-    </div>
 
-    <footer class="yeo-footer">
-        <div class="container">
-            <div class="columns">
-                <div class="column col-3 col-sm-6">
-                    <div class="yeo-footer-content">
-                        <h4>Software Parqueadero</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#funcionalidades">Control Vehicular</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#funcionalidades">Gestión de Estacionamiento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#funcionalidades">Reportes de Parqueadero</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column col-3 col-sm-6">
-                    <div class="yeo-footer-content">
-                        <h4>Servicios Programa Parqueadero</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#precio">Precios Software Estacionamiento</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#como-funciona">Implementación App Parquear</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://api.whatsapp.com/send?phone=573122656289&text=Necesito%20desarrollo%20personalizado%20de%20software%20para%20mi%20parqueadero.%20¿Pueden%20cotizar?" target="_blank" rel="noopener">Desarrollo Personalizado</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column col-3 col-sm-6">
-                    <div class="yeo-footer-content">
-                        <h4>Contacto Programa Parqueadero</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="https://api.whatsapp.com/send?phone=573122656289&text=¡Hola!%20Necesito%20información%20sobre%20ParqueApp,%20el%20programa%20de%20parqueadero%20para%20mi%20estacionamiento." target="_blank" rel="noopener">WhatsApp Soporte</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="mailto:dm31284@gmail.com">Email Software Parqueadero</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#nosotros">Soporte Técnico Especializado</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="column col-3 col-sm-6">
-                    <div class="yeo-footer-content">
-                        <h4>ParqueApp Colombia</h4>
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a href="#">Software Estacionamiento SaaS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">Popayán, Cauca, Colombia</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">© 2025 ParqueApp - Programa Parqueadero</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <main class="main-price" id="precios">
+        <section class="price-section">
+            <article class="price-article">
 
-     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const burgerBtn = document.getElementById('burgerBtn');
-            const navbarMenu = document.getElementById('navbarMenu');
-            
-            burgerBtn.addEventListener('click', function() {
-                burgerBtn.classList.toggle('active');
-                navbarMenu.classList.toggle('open');
-                
-                // Prevenir scroll del body cuando el menú está abierto
-                if (navbarMenu.classList.contains('open')) {
-                    document.body.style.overflow = 'hidden';
-                } else {
-                    document.body.style.overflow = 'auto';
-                }
-            });
-            
-            // Cerrar menú al hacer click en un enlace (móvil)
-            const menuLinks = navbarMenu.querySelectorAll('a:not(.btn-primary)');
-            menuLinks.forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 768) {
-                        burgerBtn.classList.remove('active');
-                        navbarMenu.classList.remove('open');
-                        document.body.style.overflow = 'auto';
-                    }
-                });
-            });
-            
-            // Cerrar menú al redimensionar ventana
-            window.addEventListener('resize', function() {
-                if (window.innerWidth > 768) {
-                    burgerBtn.classList.remove('active');
-                    navbarMenu.classList.remove('open');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-            
-            // Cerrar menú al hacer click fuera de él
-            document.addEventListener('click', function(e) {
-                if (!e.target.closest('.navbar') && navbarMenu.classList.contains('open')) {
-                    burgerBtn.classList.remove('active');
-                    navbarMenu.classList.remove('open');
-                    document.body.style.overflow = 'auto';
-                }
-            });
+                <header class="price-header">
+                    <h2 class="price-title">
+                        Precios del Software de Parqueaderos ParqueApp
+                    </h2>
+
+                    <p class="price-subtitle">
+                        Plan flexible de gestión de estacionamientos sin costos ocultos
+                        ni permanencia mínima.
+                    </p>
+
+                    <ul class="price-highlights">
+                        <li>Sin costos ocultos</li>
+                        <li>Sin permanencia mínima</li>
+                        <li>Para parqueaderos pequeños, medianos y grandes</li>
+                    </ul>
+                </header>
+
+                <div class="price-table-wrapper">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th>Frecuencia</th>
+                                <th>Plan</th>
+                                <th>Descuento</th>
+                                <th>Costo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mensual</td>
+                                <td>Básico</td>
+                                <td>0%</td>
+                                <td><strong>$60.000 COP</strong></td>
+                            </tr>
+                            <tr class="price-highlight">
+                                <td>Anual</td>
+                                <td>Básico</td>
+                                <td>20%</td>
+                                <td><strong>$600.000 COP</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <section class="price-features">
+                    <h3>Funcionalidades incluidas en el plan básico</h3>
+                    <ul>
+                        <li>Hasta 3 usuarios</li>
+                        <li>Capacidad de hasta 100 espacios</li>
+                        <li>Software de parqueadero en la nube</li>
+                        <li>Facturación automática</li>
+                        <li>Reportes por fechas</li>
+                        <li>Configuración de convenios</li>
+                        <li>Tarifas de parqueadero configurables</li>
+                    </ul>
+                </section>
+
+                <a 
+                    href="https://api.whatsapp.com/send?phone=573122656289&text=Hola,%20me%20interesaría%20el%20cotizar%20una%20suscripción%20para%20mi%20parqueadero%20con%20ParqueApp." 
+                    rel="noopener" 
+                    target="_blank"
+                    class="price-btn"
+                    role="button"
+                    aria-label="Solicitar cotización del software de parqueaderos ParqueApp"
+                >
+                    Solicitar cotización
+                </a>
+
+            </article>
+        </section>
+    </main>
+
+    <main class="main" >
+        <section class="about-section" id="nosotros">
+            <article class="about-article">
+
+                <header class="about-header">
+                    <h2>Sobre ParqueApp</h2>
+                    <p>
+                        Software de parqueaderos creado en Colombia para digitalizar y simplificar
+                        la gestión de estacionamientos públicos y privados.
+                    </p>
+                </header>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            ParqueApp nace a partir de una necesidad real detectada en la operación
+                            diaria de parqueaderos: sistemas complejos, procesos manuales y
+                            herramientas poco accesibles para administradores con baja experiencia digital.
+                        </p>
+
+                        <p>
+                            Diseñamos una plataforma de parqueadero intuitiva, eficiente y confiable,
+                            enfocada en facilitar el control vehicular, la facturación y la
+                            administración del estacionamiento sin fricciones técnicas.
+                        </p>
+
+                        <p>
+                            Nuestro origen en Popayán, Cauca, una ciudad con bajo nivel de
+                            digitalización en este sector, nos permitió validar que el cambio desde
+                            el manejo tradicional con talonarios y registros manuales hacia un
+                            software en la nube es posible, rentable y sostenible.
+                        </p>
+
+                        <p>
+                            En ParqueApp priorizamos la comunicación directa con nuestros clientes,
+                            la mejora continua del sistema y el uso de tecnologías actualizadas para
+                            garantizar una experiencia estable y segura en cada parqueadero.
+                        </p>
+                    </div>
+
+                    <div class="about-visual">
+                        <img 
+                            src="images/people.svg"
+                            alt="Equipo desarrollador del software de parqueaderos ParqueApp"
+                        >
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <footer class="footer-section" id="contacto">
+            <article class="footer-article">
+
+                <div class="footer-brand">
+                    <h3>ParqueApp</h3>
+                    <p>
+                        Software de parqueaderos en la nube para la gestión eficiente de
+                        estacionamientos en Colombia.
+                    </p>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>Email: <a href="mailto:dm31284@gmail.com">dm31284@gmail.com</a></li>
+                        <li>Teléfono: <a href="tel:+573122656289">+57 312 265 6289</a></li>
+                        <li>Sitio web: <a href="https://www.parqueapp.com">www.parqueapp.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-legal">
+                    <p>
+                        © ParqueApp — Software de parqueaderos en Colombia.
+                        Todos los derechos reservados.
+                    </p>
+                </div>
+
+            </article>
+        </footer>
+
+    </main>
+
+    <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.appbar-menu');
+
+    toggle.addEventListener('click', () => {
+        const isOpen = menu.classList.toggle('open');
+        toggle.classList.toggle('active');
+        toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    document.querySelectorAll('.appbar-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('open');
+            toggle.classList.remove('active');
+            toggle.setAttribute('aria-expanded', 'false');
         });
+    });
     </script>
 </body>
-
 </html>
